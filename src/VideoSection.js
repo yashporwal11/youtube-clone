@@ -2,6 +2,7 @@ import React from "react";
 import "./VideoSection.css";
 import VideoCard from "./VideoCard";
 import VideoData from "./VideoData.json";
+import thumbnailGIF from "./images/thumbnailGIF.webp";
 
 function VideoSection({ search, expand }) {
   return (
@@ -13,7 +14,7 @@ function VideoSection({ search, expand }) {
               <VideoCard
                 key={index}
                 thumbnail={val.thumbnail}
-                thumbnailGIF={val.thumbnailGIF}
+                thumbnailGIF={thumbnailGIF}
                 title={val.title}
                 channel={val.channel}
                 views={val.views}
